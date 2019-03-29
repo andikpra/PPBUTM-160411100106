@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modul2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar"
+            android:text="Nama Pemesan"
+            android:layout_centerInParent="true"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/pemesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_below="@id/judul"
+            />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pemesan"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:text="Menu Coffe :"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sajian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pemesan"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/menu"
+            android:text="Sajian :"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/Arabica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/menu"
+            android:text="Arabica"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/Robusta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumlah1"
+            android:text="Robusta"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"/>
+
+        <CheckBox
+            android:id="@+id/American"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumlah2"
+            android:layout_alignParentLeft="true"
+            android:text="American"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"/>
+
+        <RadioGroup
+            android:layout_centerInParent="true"
+            android:id="@+id/pilih1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sajian"
+            android:layout_toRightOf="@id/Arabica"
+            android:layout_marginTop="15dp">
+
+            <RadioButton
+                android:id="@+id/panas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panas"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="-33dp"
+                />
+
+            <RadioButton
+                android:id="@+id/dingin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="Dingin" />
+
+
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/pilih2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/jumlah1"
+            android:layout_toRightOf="@+id/Robusta"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="15dp">
+
+            <RadioButton
+                android:id="@+id/panas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panas"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="-33dp"
+                />
+
+            <RadioButton
+                android:id="@+id/dingin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dingin"
+                android:layout_marginLeft="100dp"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/pilih3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/jumlah2"
+            android:layout_toRightOf="@id/American"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="-12dp">
+            <RadioButton
+                android:id="@+id/panas3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panas"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="-33dp"
+                />
+
+            <RadioButton
+                android:id="@+id/dingin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dingin"
+                android:layout_marginLeft="100dp"/>
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/jumlah1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Arabica"
+            android:layout_toRightOf="@id/tm1"
+            android:text="0"
+            android:layout_marginBottom="-20dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/tp1"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="inc1"
+            android:text="+"
+            android:layout_below="@id/Arabica"
+            android:layout_toRightOf="@id/jumlah1"
+            android:layout_marginLeft="0dp"/>
+
+        <Button
+            android:id="@+id/tm1"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="dec1"
+            android:text="-"
+            android:layout_below="@id/Arabica"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/jumlah2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Robusta"
+            android:text="0"
+            android:layout_toRightOf="@id/tm2"
+            android:layout_marginBottom="-20dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/tp2"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="inc2"
+            android:text="+"
+            android:layout_below="@id/Robusta"
+            android:layout_toRightOf="@id/jumlah2"
+            android:layout_marginLeft="0dp"/>
+
+        <Button
+            android:id="@+id/tm2"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="dec2"
+            android:text="-"
+            android:layout_below="@id/Robusta"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/jumlah3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/American"
+            android:text="0"
+            android:layout_toRightOf="@id/tm3"
+            android:layout_marginBottom="-20dp"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/tp3"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="inc3"
+            android:text="+"
+            android:layout_below="@id/American"
+            android:layout_toRightOf="@id/jumlah3"
+            android:layout_marginLeft="0dp"/>
+
+        <Button
+            android:id="@+id/tm3"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="dec3"
+            android:text="-"
+            android:layout_below="@id/American"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/cek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tm3"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="-95dp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="cek"
+            android:text="CEK"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>
